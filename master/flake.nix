@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-wstp-master.flake = false;
+  inputs.src-wstp-master.ref   = "refs/heads/master";
   inputs.src-wstp-master.owner = "oskca";
-  inputs.src-wstp-master.ref   = "master";
   inputs.src-wstp-master.repo  = "nim-wstp";
   inputs.src-wstp-master.type  = "github";
   
