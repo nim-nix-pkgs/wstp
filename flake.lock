@@ -3,20 +3,22 @@
     "c2nim": {
       "inputs": {
         "flakeNimbleLib": [
+          "wstp-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "wstp-master",
           "nixpkgs"
         ],
         "src-c2nim-0_9_18": "src-c2nim-0_9_18"
       },
       "locked": {
         "dir": "0_9_18",
-        "lastModified": 1651917767,
-        "narHash": "sha256-04QZvkQsphpYCa3E523Xd1CK7p/S3fdVZhwtvfkZ+Z4=",
+        "lastModified": 1651555291,
+        "narHash": "sha256-RJE2wkQxg7K0y8zRNqrfuTeqLG9v/i39JsinqDaw98Y=",
         "owner": "nim-nix-pkgs",
         "repo": "c2nim",
-        "rev": "eb0b37ea102263b51410f535f0ba369c10ba30ee",
+        "rev": "1a1de5802b811375efdf1ed0eb81272f2105e7b1",
         "type": "github"
       },
       "original": {
@@ -61,10 +63,9 @@
     },
     "root": {
       "inputs": {
-        "c2nim": "c2nim",
         "flakeNimbleLib": "flakeNimbleLib",
         "nixpkgs": "nixpkgs",
-        "src-wstp-master": "src-wstp-master"
+        "wstp-master": "wstp-master"
       }
     },
     "src-c2nim-0_9_18": {
@@ -98,6 +99,34 @@
         "owner": "oskca",
         "ref": "refs/heads/master",
         "repo": "nim-wstp",
+        "type": "github"
+      }
+    },
+    "wstp-master": {
+      "inputs": {
+        "c2nim": "c2nim",
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "src-wstp-master": "src-wstp-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1651556868,
+        "narHash": "sha256-+B6LVU6/kuYI4Oi9Z8CvH/eS8JisHOj9Wq2/LPzgjV4=",
+        "owner": "nim-nix-pkgs",
+        "repo": "wstp",
+        "rev": "689c14e75e99dd044da85bd84560aa24b1cf3087",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "wstp",
         "type": "github"
       }
     }
